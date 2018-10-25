@@ -1,5 +1,7 @@
 package com.java8.entity;
 
+import com.java8.interfaces.PredicateLambda;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -9,7 +11,7 @@ import java.util.Objects;
  * @create 2018年10月23号:22点31分
  * @mailbox mynameisweiyan@gmail.com
  */
-public class Persion implements Serializable {
+public class Persion implements Serializable ,PredicateLambda{
     private String userName;
     private Integer age;
 

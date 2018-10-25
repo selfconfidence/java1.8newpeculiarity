@@ -16,7 +16,9 @@ public interface PredicateLambda {
     static String returnString(String name){
         return name;
     }
-   public Integer returnInt(Integer sex,Integer gender);
+   default Integer returnInt(Integer sex,Integer gender){
+     return sex+gender;
+   };
 
 
 
