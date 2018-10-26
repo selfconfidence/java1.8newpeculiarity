@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vue-ssm:war">
+    <output-path>$PROJECT_DIR$/vue-ssm/target</output-path>
+    <root id="archive" name="vue-ssm-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="vue-ssm:war exploded" />
+    </root>
+  </artifact>
+</component>

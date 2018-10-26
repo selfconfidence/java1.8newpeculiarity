@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java8-new" />
+        <module name="vue-jpa" />
+        <module name="vue-ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java8-new" target="1.8" />
+      <module name="vue-jpa" target="1.8" />
+      <module name="vue-ssm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
