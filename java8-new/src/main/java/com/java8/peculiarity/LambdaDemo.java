@@ -33,11 +33,12 @@ public class LambdaDemo {
         String name = PredicateLambda.returnString("张三");
         System.out.println(name);
         //使用表达式对数据进行操作
-        PredicateLambda predicateLambda = (x, y) -> {
-            return x + y;
-        };
-        Integer integer = predicateLambda.returnInt(4, 6);
-        System.out.println(integer);
+      //  PredicateLambda predicateLambda = (x, y) -> {
+          //  return x + y;
+
+        //};
+        //Integer integer = predicateLambda.returnInt(4, 6);
+        //System.out.println(integer);
     }
 
     /**

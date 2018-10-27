@@ -4,9 +4,11 @@ import com.vue.crud.vuejpa.pojo.JobInfo;
 import com.vue.crud.vuejpa.repository.JobRepository;
 import com.vue.crud.vuejpa.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Optional;
 
 /**
  * @author misterWei
@@ -19,7 +21,20 @@ public class JobServiceImpl implements JobService {
     private JobRepository jobRepository;
 
     @Override
-    public List<JobInfo> findAll() {
-        return jobRepository.findAll();
+    public Page<JobInfo> findAll(Integer page,Integer size)
+    {
+        Page<JobInfo> all = jobRepository.findAll(PageRequest.of(page, size));
+
+        return all;
+    }
+
+    @Override
+    public void removeById(Long id) {
+        jobRepository.deleteById(id);
+    }
+
+    @Override
+    public Optional<JobInfo> findById(Long id) {
+        return jobRepository.findById(id);
     }
 }

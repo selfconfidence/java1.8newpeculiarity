@@ -1,8 +1,9 @@
 package com.vue.crud.vuejpa.service;
 
 import com.vue.crud.vuejpa.pojo.JobInfo;
+import org.springframework.data.domain.Page;
 
-import java.util.List;
+import java.util.Optional;
 
 /**
  * @author misterWei
@@ -11,5 +12,7 @@ import java.util.List;
  */
 public interface JobService {
 
-    public List<JobInfo> findAll();
+    public Page<JobInfo> findAll(Integer page,Integer size);
+    void removeById(Long id);
+    Optional<JobInfo> findById(Long id);
 }
