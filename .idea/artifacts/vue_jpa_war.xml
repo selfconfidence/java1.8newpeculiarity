@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vue-jpa:war">
+    <output-path>$PROJECT_DIR$/vue-jpa/target</output-path>
+    <root id="archive" name="vue-jpa-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="vue-jpa:war exploded" />
+    </root>
+  </artifact>
+</component>
