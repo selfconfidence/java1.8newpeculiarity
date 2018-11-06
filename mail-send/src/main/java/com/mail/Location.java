@@ -63,7 +63,7 @@ public class Location {
         uriBuilder.addParameter("password", "123456");*/
         /** 第二种添加参数的形式 */
         List<NameValuePair> list = new LinkedList<>();
-        BasicNameValuePair param1 = new BasicNameValuePair("ip", "192.168.25.1".trim());
+        BasicNameValuePair param1 = new BasicNameValuePair("ip", "125.41.184.111".trim());
         list.add(param1);
         BasicNameValuePair param2 = new BasicNameValuePair("ak", "SSWfmQxfImQtH3ZeRRAhbHF9h37MeDXH");
         list.add(param2);
